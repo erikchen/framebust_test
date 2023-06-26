@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<p>Loads a x-origin frame that tries to framebust after 1s.
+<iframe src="https://cr2.kungfoo.net/framebust/buster.html"></iframe>
+
+<script>
+let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+width=4000,height=4000,left=-1000,top=-1000`;
+setTimeout(function () {
+        open('http://www.cnn.com', 'test', params);
+}, 1000);
+</script>
+
